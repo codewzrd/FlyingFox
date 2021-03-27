@@ -87,6 +87,7 @@ tab-item.collapsed{
     padding: 0 !important;
 }
 
+
 tab-item:not([data-level="0"]):not(.pinned){
     border-left: dashed 2px var(--light-4) !important;
     border-top-left-radius: 0;
@@ -109,6 +110,10 @@ tab-item .label {
     padding-bottom: 2px;
 }
 
+tab-item .twisty{
+    visibility: hidden;
+}
+
 tab-item .twisty:before{
    background: var(--light-3) !important;
 }
@@ -127,11 +132,11 @@ tab-item:not(.active).highlighted{
 }
 
 tab-item:not(active):hover {
-    background: var(--dark-1);
+    background: var(--dark-2);
 }
 
 tab-item:hover tab-closebox {
-    right: 10px;
+    left: 10px;
     opacity: 1;
 }
 
@@ -189,11 +194,15 @@ tab-item:not(pinned) tab-closebox {
 }
 
 :root.left tab-item:not(.pinned):hover tab-favicon {
-    transform: scale(120%) translateX(-20px) !important;
+    transform: scale(120%) /*translateX(-20px)*/ !important;
+}
+
+:root.left tab-item/*:not([data-child-ids])*/:hover .label {
+    transform: translateX(20px);
 }
 
 :root.left tab-item:not([data-child-ids]):hover .label {
-    transform: translateX(-15px);
+    transform: translateX(15px);
 }
 
 :root.left tab-item:hover .sound-button:after{
@@ -201,7 +210,7 @@ tab-item:not(pinned) tab-closebox {
 }
 
 :root.left tab-item[data-child-ids] .twisty{
-    margin-left: 5px;
+    margin-left: -5px;
 }
 
 /***********************************/
