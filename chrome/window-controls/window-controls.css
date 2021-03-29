@@ -23,7 +23,7 @@
 }
 
 /* close button */
-.titlebar-close {
+/*.titlebar-close {
     -moz-appearance: none !important;
     fill: var(--red) !important;
     opacity: 0.7 !important;
@@ -33,9 +33,9 @@
 .titlebar-close:hover {
     opacity: 1 !important;
 }
-
+*/
 /* minimize button */
-.titlebar-min {
+/*.titlebar-min {
     -moz-appearance: none !important;
     fill: var(--yellow) !important;
     opacity: 0.7 !important;
@@ -45,9 +45,9 @@
 .titlebar-min:hover {
     opacity: 1 !important;
 }
-
+*/
 /* maximize button */
-.titlebar-max {
+/*.titlebar-max {
     -moz-appearance: none !important;
     fill: var(--green) !important;
     opacity: 0.7 !important;
@@ -57,9 +57,9 @@
 .titlebar-max:hover {
     opacity: 1 !important;
 }
-
+*/
 /* restore button */
-.titlebar-restore {
+/*.titlebar-restore {
     -moz-appearance: none !important;
     fill: var(--green) !important;
     opacity: 0.7 !important;
@@ -69,3 +69,4 @@
 .titlebar-restore:hover {
     opacity: 1 !important;
 }
+*/
